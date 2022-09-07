@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +37,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.no-property-data {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(140, 134, 134);
+  opacity: 0.8;
+  color: black;
+  z-index: 100;
+  font-size: 4rem;
+  flex-direction: column;
+  gap: 2rem;
+  top: 0;
+}
+
+.no-property-filter {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
