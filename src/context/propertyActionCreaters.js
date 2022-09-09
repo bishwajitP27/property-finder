@@ -4,6 +4,7 @@ export const ACTIONS = {
   FILTER_PROPERTY: "FILTER_PROPERTY",
   SELECT_PROPERTIES: "SELECT_PROPERTIES",
   REMOVE_PROPERTY: "REMOVE_PROPERTY",
+  FILTER_APPLY: "FILTER_APPLY",
 };
 
 export const GET_PROPERTIES_ACTION = (payload) => {
@@ -37,6 +38,13 @@ export const GET_REMOVE_PROPERTY = (payload) => {
 export const GET_FILTERED_PROPERTY = (payload) => {
   return {
     type: ACTIONS.FILTER_PROPERTY,
+    payload,
+  };
+};
+
+export const GET_FILTER_APPLY_PROPERTY = (payload) => {
+  return {
+    type: ACTIONS.FILTER_APPLY,
     payload,
   };
 };

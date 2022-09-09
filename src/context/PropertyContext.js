@@ -24,6 +24,8 @@ export default function PropertyContextProvider({ children }) {
     getProperties(dispatch);
   }, []);
 
+  // useEffect()
+
   return (
     <PropertyContext.Provider
       value={{
