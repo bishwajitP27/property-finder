@@ -11,14 +11,14 @@ function generateRandomMatch() {
 }
 
 export default function Properties({ propertyInformation }) {
+  const { propertyMetadata, averageRating, reviewCount, bedrooms, sleeps, bathrooms, images, propertyId } = { ...propertyInformation };
+
   const { dispatch, selectedPropertyList } = useContext(PropertyContext);
   const [isChecked, setIsChecked] = useState(() => {
     return selectedPropertyList.some((id) => {
       return propertyId === id;
     });
   });
-
-  const { propertyMetadata, averageRating, reviewCount, bedrooms, sleeps, bathrooms, images, propertyId } = { ...propertyInformation };
 
   const { headline } = { ...propertyMetadata };
   const { full: bathroomCount } = { ...bathrooms };
